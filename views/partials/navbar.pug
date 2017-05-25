@@ -1,23 +1,17 @@
-.navbar.navbar-light.navbar-fixed-top.bug-fix(role='navigation', style='background-color: #F9F9F9;')
-  .container
-    .navbar-header
-      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='/')
-        dynaMIT
-        img.logo(alt='Brand', src='/images/navbar-logo.png', class='logo')
-    .navbar-collapse.collapse
-      ul.nav.navbar-nav.navbar-right
-        li
-          a(href='#') Learn More
-        li
-          a(href='/aboutus') About Us
-        li
-          a(href='#') Materials      
-        li
-          a(href='#') Donate
-        li
-          a(href='#') Apply
+.ui.fixed.borderless.menu(role='navigation', style='background-color: #F9F9F9;')
+  .ui.item
+  .ui.item
+  .ui.item.vertically.fitted
+    dynaMIT
+    img.ui.image.tiny(alt='Brand', src='/images/navbar-logo.png', class='logo')
+  .right.bordlerless.menu
+      li.ui.item
+        a(href='#') Learn More
+      li.ui.item
+        a(href='/aboutus') About Us
+      li.ui.item
+        a(href='#') Materials      
+      li.ui.item
+        a(href='#') Donate
+      li.ui.item
+        a(href='#') Apply
