@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'dynaMIT' });
 });
 
+router.get('/aboutus', function(req, res, next) {
+	res.render('aboutus', {});
+});
+
 module.exports = router;

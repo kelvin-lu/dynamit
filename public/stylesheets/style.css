@@ -1,3 +1,11 @@
+/*
+dynaBlue: #3CC3E9;
+dynaOrange: #F8941D;
+dynaGrey: #CBCBCB;
+*/
+
+
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,4 +17,13 @@ a {
 
 .logo {
 	height: 2em;
+}
+
+.header {
+	color: #3CC3E9; /*dynaBlue*/
+	text-align: right;
+}
+
+.image {
+	width: 100%;
 }
