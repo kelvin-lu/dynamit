@@ -21,7 +21,7 @@ a {
 	height: 2em;
 }
 
-.header {
+.ui.dynaColor.header {
 	color: #3CC3E9; /*dynaBlue*/
 	text-align: right;
 }
