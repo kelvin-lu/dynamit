@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
 
+var page_size = 10;
+
 var materialSchema = mongoose.Schema({
-  name           : { type : String, required: true},
+  name           : { type : String, required: true, unique: true},
   description    : { type : String, required: true},
   links          : {
      video_url   : { type : String },
@@ -10,5 +12,9 @@ var materialSchema = mongoose.Schema({
   },
   tags           : [{type : String }]
 });
+
+materialSchema.statics.getMaterialsPage = function(page, cb){
+  
+}
 
 module.exports = mongoose.model('Material', materialSchema);

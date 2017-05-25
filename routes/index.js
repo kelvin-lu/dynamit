@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/aboutus', function(req, res, next) {
-	res.render('aboutus', {});
+	res.render('aboutus', { title: 'dynaMIT: About Us'});
 });
 
 module.exports = router;
