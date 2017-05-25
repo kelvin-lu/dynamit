@@ -14,6 +14,15 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+var mongoose = require('mongoose');
+mongoose.set('debug', true);
+var DB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/dynamit';
+
+console.log(DB_URI);
+
+db = mongoose.connect(DB_URI);
+console.log('connected to DB');
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
